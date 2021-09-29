@@ -12,11 +12,6 @@ import java.util.Scanner;
 
 public class Reader {
 
-    /*private Key selectedKey;
-
-    public Key getSelectedKey() {
-        return selectedKey;
-    }*/
 
     public boolean inputKeysExist(String filename) {
         File file = new File("src/OTP/INPUT/KEYS/" + filename + ".txt");
@@ -70,35 +65,4 @@ public class Reader {
         File exportPath = new File("src/OTP/INPUT/CIPHERTEXT/" + fileName + ".txt");
         return exportPath.exists();
     }
-
-     /*public void importKeys(String keyFileName, int keyNumber) {
-                    int totalLines = 0;
-                try (BufferedReader bufferedReader = Files.newBufferedReader(Paths.get(
-                        "src/OTP/INPUT/KEYS/" + keyFileName + ".txt"))) {
-
-                    while(bufferedReader.readLine() != null) {
-                        totalLines++;
-                    } bufferedReader.close();
-                    BufferedReader bufferedReader2 = Files.newBufferedReader(Paths.get(
-                            "src/OTP/INPUT/KEYS/" + keyFileName + ".txt"));
-                    if(keyNumber >= 1 && keyNumber <= totalLines) {
-                        int currentLine = 1;
-
-                    do {
-                        String selectedKeyAsString = bufferedReader2.readLine();
-                        if(!selectedKeyAsString.equals("USED")) {
-                        selectedKey = new Key(selectedKeyAsString, keyNumber, keyFileName);
-                        } else {
-                            selectedKey = null;
-                        }
-                        currentLine++;
-
-                    } while (currentLine <= keyNumber);
-                    bufferedReader2.close();
-                    }
-                } catch (IOException ioe) {
-                    System.out.println(ioe.getMessage());
-                }
-
-    }*/
 }

@@ -11,15 +11,6 @@ public class Key {
     private int keyNumber;
     private String fileName;
 
-   /* public Key(int keyLength) {
-        this.keyLength = keyLength;
-        for(int i = 0; i <= keyLength - 1; i++) {
-            SecureRandom secureRandom = new SecureRandom();
-            int randomKeyValue = secureRandom.nextInt(getCharToIntRef().length());
-            keyValues.add(randomKeyValue);
-        }
-
-    }*/
 
     public Key (int[] values) {
         this.keyLength = values.length;

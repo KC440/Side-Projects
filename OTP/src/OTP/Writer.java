@@ -19,18 +19,6 @@ public class Writer {
         }
         }
 
-/*    public void exportKeys(int keyLength, int numKeys, String fileName) {
-        File exportPath = new File("src/OTP/OUTPUT/KEYS/" + fileName + ".txt");
-        try(PrintWriter printWriter = new PrintWriter(exportPath)) {
-            for(int i = 1; i <= numKeys; i++) {
-                Key key = new Key(keyLength);
-                printWriter.println(key);
-            }
-        } catch (FileNotFoundException fnfe) {
-            System.out.println(fnfe.getMessage());
-        }
-}*/
-
     public void exportKeys(int keyLength, int numKeys, String fileName) {
         File exportPath = new File("src/OTP/OUTPUT/KEYS/" + fileName + ".txt");
         RandomNumberService rns = new RandomNumberService();

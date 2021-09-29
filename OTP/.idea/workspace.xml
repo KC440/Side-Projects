@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cf9ce58-8d4b-4d39-bfe5-30dd7fd5800c" name="Default Changelist" comment="" />
+    <list default="true" id="6cf9ce58-8d4b-4d39-bfe5-30dd7fd5800c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/OTP/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OTP/Key.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OTP/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OTP/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OTP/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OTP/Writer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
