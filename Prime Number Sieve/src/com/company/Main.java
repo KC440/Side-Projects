@@ -53,7 +53,7 @@ public class Main {
         for(int i=3; i<=target; i+=2) {
             list.add(i);
         }
-
+        long startTime = System.currentTimeMillis();
         for(int i=0; list.get(i)*list.get(i)<=target; i++) {
             for (int c=i+1; c < list.size(); c++) {
                 if (c!=i+1 && list.get(c)%list.get(i)==0) {
@@ -61,12 +61,14 @@ public class Main {
                 }
             }
         }
+        long endTime = System.currentTimeMillis();
 
         System.out.println(ANSI_CYAN+"\r\nPrime numbers up to "+ANSI_YELLOW+target+ANSI_CYAN+
                 ", with centered square primes in "+ANSI_BLUE+"blue"+ANSI_CYAN+", star primes in "+ANSI_RED+"red"+ANSI_CYAN+
                 ", and primes that are both in "+ANSI_PURPLE+"purple"+ANSI_CYAN+":\r\n"+ANSI_RESET);
 
         findFigurates(list);
+        System.out.println("\r\n"+ANSI_RED+"Sieve time: "+ANSI_YELLOW+(endTime-startTime)+ANSI_RED+" milliseconds"+ANSI_RESET+"\r\n");
     }
 
     private void findFigurates(List<Integer> list) {
@@ -105,6 +107,5 @@ public class Main {
                 System.out.print(", ");
             }
         }
-        System.out.println("\r\n");
     }
 }
