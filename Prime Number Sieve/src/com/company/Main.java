@@ -56,7 +56,7 @@ public class Main {
         long startTime = System.currentTimeMillis();
         for(int i=0; list.get(i)*list.get(i)<=target; i++) {
             for (int c=i+1; c < list.size(); c++) {
-                if (c!=i+1 && list.get(c)%list.get(i)==0) {
+                if (list.get(c)%list.get(i)==0) {
                     list.remove(list.get(c));
                 }
             }
